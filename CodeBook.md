@@ -7,18 +7,19 @@ Peer Assessments /Getting and Cleaning Data Course Project
 
 ### Transformation or steps in creating tidy data
 =============================================
-*loading required packages
-* STEP 1: Merges the training and the test sets to create one data set
+
+-loading required packages
+- STEP 1: Merges the training and the test sets to create one data set
           - read.table      ---  read data into data frames
           - names()         --- add column name
           - cbind(),rbind   --- combine files into one dataset
-*STEP 2: Extracts only the measurements on the mean and standard deviation for each measurement.
+-STEP 2: Extracts only the measurements on the mean and standard deviation for each measurement.
           - grepl           --- to extract the relevants columns
           - mergeData       --- merging data set
-*STEP 3: Uses descriptive activity names to name the activities in the data set.
-*STEP 4: Appropriately labels the data set with descriptive activity names.
+-STEP 3: Uses descriptive activity names to name the activities in the data set.
+-STEP 4: Appropriately labels the data set with descriptive activity names.
           - factor          --- creating factor for "activity"
-*STEP 5: Creates a second, independent tidy data set with the average of each variable          for each activity and each subject.
+-STEP 5: Creates a second, independent tidy data set with the average of each variable          for each activity and each subject.
           - melt            --- melting the dataset
           - dcast           --- reshaping the datafame
           - write.table     --- writing data into tidy.txt file.
@@ -42,6 +43,7 @@ activity
         "Laying -
         
 mean and Standard divation columns
+
         --measurements on the mean and standard deviation for each measurement.
         --tBodyAcc  - total_acc: The acceleration signal from the smartphone       
                       accelerometer X axis in standard gravity units 'g'.
